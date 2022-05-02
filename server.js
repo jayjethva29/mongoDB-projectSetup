@@ -12,7 +12,6 @@ process.on('uncaughtException', (err) => {
 // Imports
 const mongoose = require('mongoose');
 const app = require('./app');
-const Media = require('./models/mediaModel');
 
 //DB Connection
 const DB = process.env.DATABASE.replace('<password>', process.env.DB_PASSWORD);
