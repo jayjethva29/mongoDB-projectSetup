@@ -15,8 +15,7 @@ const app = require('./app');
 const Media = require('./models/mediaModel');
 
 //DB Connection
-// const DB = process.env.DATABASE.replace('<password>', process.env.DB_PASSWORD);
-const DB = `mongodb+srv://akash:akash08@cluster0.5dwi5.mongodb.net/sandee`;
+const DB = process.env.DATABASE.replace('<password>', process.env.DB_PASSWORD);
 mongoose
   .connect(DB, {
     useNewUrlParser: true,
